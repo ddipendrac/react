@@ -10,6 +10,11 @@ function App() {
   const addValue = () => {
     if(counter < 20){
       setCounter(counter + 1)
+
+      // HOW TO INCREASE BY 3 IN 1 Click???? Interview ????
+      // setCounter(prevCounter => preVcounter + 1)
+      // setCounter(prevCounter => preVcounter + 1) 
+      // setCounter(prevCounter => preVcounter + 1)
     }
     
   }
