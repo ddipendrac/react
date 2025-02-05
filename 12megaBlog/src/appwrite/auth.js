@@ -32,15 +32,17 @@ export class AuthService {
       return await this.account.createEmailPasswordSession(email, password)
 
     } catch (error) {
+      console.error("Login error:", error);
         throw error
     }
   }
 
   async getCurrentUser () {
     try {
-      await this.account.get();
+      return await this.account.get();
     } catch (error) {
-      throw error
+      throw error;
+      return null;
     }
     return null;
   }
